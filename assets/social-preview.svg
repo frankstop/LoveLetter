@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f2e8d2"/>
+  <path d="M0 18h1200M0 612h1200M18 0v630M1182 0v630" stroke="#151310" stroke-width="8"/>
+  <g transform="translate(80 72)">
+    <path d="M220 430C75 322 24 218 69 139c38-68 123-55 151 20 28-75 113-88 151-20 45 79-6 183-151 291Z" fill="#a92e27" stroke="#151310" stroke-width="18" stroke-linejoin="round"/>
+    <path d="m248 47-42 215 46 22-76 192 30-180-49-23Z" fill="#f2e8d2" stroke="#151310" stroke-width="16" stroke-linejoin="round"/>
+  </g>
+  <text x="510" y="260" fill="#151310" font-family="Impact, sans-serif" font-size="122" letter-spacing="3">MARKED</text>
+  <text x="510" y="380" fill="#a92e27" font-family="Impact, sans-serif" font-size="122" letter-spacing="3">HEARTS</text>
+  <text x="515" y="445" fill="#151310" font-family="Trebuchet MS, sans-serif" font-size="29" font-weight="bold" letter-spacing="2">PASS THE LETTER. GUARD YOUR HEART.</text>
+</svg>
+

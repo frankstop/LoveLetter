@@ -1,0 +1,13 @@
+{
+  "name": "marked-hearts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A static tattoo-flash deduction card game PWA.",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check js/app.js && node --check js/engine.js && node --check js/ai.js && node --check sw.js",
+    "serve": "python3 -m http.server 8000"
+  }
+}
+
