@@ -310,6 +310,10 @@ function renderRoundOver() {
 }
 
 function renderGameOver() {
+  if (window.embedAnalytics) {
+    const humanWon = state.winnerIds.some((id) => getPlayer(state, id).type === "human");
+    window.embedAnalytics.endRun(humanWon ? "win" : "lose");
+  }
   const names = state.winnerIds.map((id) => getPlayer(state, id).name);
   return `
     <main class="result-shell game-over paper-screen">
@@ -409,6 +413,7 @@ function handleClick(event) {
     if (state) {
       settings = { ...settings, ...state.settings };
       screen = "game";
+      if (window.embedAnalytics) window.embedAnalytics.startRun("LoveLetter");
     }
   } else if (action === "menu" || action === "save-exit") {
     if (state) saveGame(state);
@@ -505,6 +510,7 @@ document.addEventListener("submit", (event) => {
   clearGame();
   saveGame(state);
   screen = "game";
+  if (window.embedAnalytics) window.embedAnalytics.startRun("LoveLetter");
   playCue("draw", settings.sound);
   render();
 });
