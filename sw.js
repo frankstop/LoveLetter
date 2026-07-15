@@ -1,4 +1,4 @@
-const CACHE = "marked-hearts-v4";
+const CACHE = "marked-hearts-v5";
 const APP_SHELL = [
   "./",
   "./index.html",
